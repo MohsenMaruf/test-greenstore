@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+		<title>Document</title>
+</head>
+
+<style>
+    .div1{
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url(resources/img-heading.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .div2{
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(resources/about.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .div3{
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(resources/img-footer.jpg) ;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .nav-item .nav-link{
+        color: white;
+    }
+    .nav-item .nav-link:hover{
+        color: green;
+        border-bottom: 2px solid green;
+    }
+
+    .nav-item .nav-link:focus{
+        color: green;
+        border-bottom: 1px solid green;
+    }
+
+    .btn-shp button:hover{
+        background-color: rgb(26, 224, 26);
+        color: white;
+    }
+
+    img[src*=plant]{
+        width: 200px;
+        height: 300px;
+    }
+
+    img[src*=plant]:hover{
+        zoom: 1.01;
+        transition-duration: 1ms;
+    }
+
+    .card:hover{
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
+        cursor: pointer;
+    }
+
+    .fa-star{
+        color: gold;
+    }
+
+    #fdback{
+        border-bottom: 2px solid rgba(17, 141, 29, .2);
+    }
+
+    .quote{
+        color: rgba(17, 141, 29, .2);
+    }
+
+    .ftl a i{
+        color: white;
+        font-size: 20px;
+    }
+
+    .ftl a:hover i[class*="facebook"]{
+        color: rgb(25, 116, 213);
+    }
+    .ftl a:hover i[class*="twitter"]{
+        color: rgb(48, 142, 197);
+    }
+    .ftl a:hover i[class*="instagram"]{
+        color: rgb(131, 7, 54);
+    }
+
+</style>
+
+<body>
+<header>
+    <div class="container-fluid div1 mt-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid mt-2">
+                    <a href="#" class="navbar-brand text-light"><h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Greenstore</h1></a>
+                    <button class="navbar-toggler text-success text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-bar"><span class="navbar-toggler-icon text-bg-light"></span></button>
+                    <div class="collapse navbar-collapse" id="navigation-bar">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="px-3 nav-item active"><a href="#" class="nav-link">HOME</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">PLANTS</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="btn btn-light"><i class="fa-sharp fa-solid fa-dollar-sign"></i>0.00 <i class="fa-solid fa-bag-shopping"></i></a></li>
+                            <li class="px-1 nav-item"><a href="#" class=" nav-link"><i class="fa-solid fa-user" style="font-size: 22px;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container text-center text-light mt-4">
+                <h6 style="font-family:cursive;">WELCOME TO THE GREENSTORE</h6>
+                <h1 class="display-2 mb-5" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Let's Bring the Spring <br> to <br> Your Home
+                </h1>
+                <button class="btn btn-light btn-outline-success mb-5">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="mt-2" style="font-family: Georgia, 'Times New Roman', Times, serif;">Plants <span class="badge bg-warning">NEW</span></h2>
+            </div>
+            <div class="col-6 btn-shp justify-content-end d-flex">
+                    <button class="btn m-1 btn-success">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 my-3">
+        <div class="row p-lg-5 p-sm-0 mb-0">
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-1.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                      <h4 class="card-title">Birdnest Japanese</h4>
+                      <p class="card-text text-muted">Air purifying</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>84.90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-2.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                      <h4 class="card-title">Monstera Deliciosa</h4>
+                      <p class="card-text text-muted">Air purifying</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>64.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-3.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <h4 class="card-title">Hoya Obovatum</h4>
+                      <p class="card-text text-muted">Air purifying</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>224.90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-lg-5 p-sm-0 mt-0">
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-4.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      <h4 class="card-title">Zz plants</h4>
+                      <p class="card-text text-muted">Air purifying</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>124.86</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-5.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                      <h4 class="card-title">Birds 0f Paradise</h4>
+                      <p class="card-text text-muted">Air purifying</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>249.54</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2 m-lg-0">
+                <div class="card text-center">
+                    <img class="card-img-top mx-auto" src="/resources/plant-6.jpg">
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      <h4 class="card-title">Carathea Beauty Star</h4>
+                      <p class="card-text text-muted">Indoor Plants</p>
+                      <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>79.20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--about-us -->
+
+    <div class="container-fluid div2 text-white p-3 my-2">
+        <h6 style="text-decoration: underline;">OUR STORY:</h6>
+        <h2 class="text-lg-center">For People Who Love Plants</h2>
+        <p class="text-light">Eos ipsa fuga et numquam voluptatem voluptate, nobis velit reprehenderit magnam debitis quis facere alias doloremque nostrum mollitia commodi soluta illum ad doloribus! Nostrum, blanditiis odio. Fugit placeat velit architecto vero eius eligendi maiores soluta tempora maxime? Fuga quam assumenda, quos consectetur totam in corporis maxime odit ab quis dolore error, eligendi, debitis officiis. Ad, nisi eligendi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat corrupti eligendi voluptas fugit neque sunt dignissimos ad est, repudiandae voluptatibus consequatur saepe earum, architecto distinctio? Expedita accusamus at repellat aliquam dicta pariatur labore ut reprehenderit qui delectus veniam aut sequi in ex dolore laboriosam, explicabo quidem distinctio similique, praesentium nihil! Dignissimos dolore facilis vel praesentium hic odit aperiam eaque nesciunt obcaecati tenetur quidem quasi laborum beatae totam doloremque eveniet eos, molestiae quibusdam quia! Possimus dolor culpa consequatur quos mollitia quo voluptatum totam facilis adipisci molestias nam voluptatibus optio alias, qui porro sed error odio nostrum odit hic ad neque! Unde.
+        <a href="#" data-bs-toggle="collapse" data-bs-target="#read-more">Read more</a>
+        <div id="read-more" class="collapse">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quasi nostrum repudiandae doloribus pariatur velit, suscipit officiis illo praesentium iure, quas tempore repellendus optio sunt autem non ipsam? Laboriosam at magnam blanditiis eius. Vero assumenda, iste blanditiis quis repellendus officia aspernatur cumque corrupti sapiente, ipsam obcaecati doloremque dignissimos, est provident animi tempore suscipit molestiae voluptate. Fugiat ex minus rem tempora perspiciatis at alias ducimus, aspernatur inventore delectus distinctio repellendus libero hic. Incidunt dolorem cumque expedita mollitia delectus dignissimos deleniti sapiente cupiditate officia, ea omnis excepturi ex in labore nesciunt a voluptatem, ipsum quibusdam asperiores atque? Ipsum dolores eveniet natus est?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, culpa consequuntur nostrum sequi quia cupiditate fuga sint id voluptas? Laudantium, impedit, aut ea ab saepe corrupti nemo ducimus quidem voluptatibus, sint harum quam eveniet temporibus eos dolor debitis officiis! Pariatur facere incidunt qui. Provident aliquid similique labore illum dolore id itaque aspernatur ratione dicta harum! Sit perferendis deleniti amet maiores dolorem recusandae rem dolor neque, quo perspiciatis repellat exercitationem, animi temporibus eius nemo sequi non accusantium quidem eum in facere. Et, sequi maxime. Ducimus omnis debitis, harum beatae sunt atque corporis ullam blanditiis praesentium at placeat doloremque provident odit nulla.
+        </div>
+        </p>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="display-5 text-center fw-normal" style="font-family: Georgia, 'Times New Roman', Times, serif;">What Ou<span id="fdback">r Custo</span>mers Say</h1>
+        <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 text-center">
+                <i class="fa-solid fa-quote-left fa-3x quote"></i>
+                <div class="feedback p-2" style="font-family: Georgia, 'Times New Roman', Times, serif;"">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sit harum minima itaque asperiores. Sequi, maiores.
+                </div>
+                <img src="/resources/user-1.jpg" class="img-fluid rounded-circle" style="width: 100px;">
+                <p>Alec Benjamin</p>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <i class="fa-solid fa-quote-left fa-3x quote"></i>
+                <div class="feedback p-2" style="font-family: Georgia, 'Times New Roman', Times, serif;"">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sit harum minima itaque asperiores. Sequi, maiores.
+                </div>
+                <img src="/resources/user-2.jpg" class="img-fluid rounded-circle" style="width: 100px;">
+                <p>Alex Di Costa</p>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <i class="fa-solid fa-quote-left fa-3x quote"></i>
+                <div class="feedback p-2" style="font-family: Georgia, 'Times New Roman', Times, serif;"">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sit harum minima itaque asperiores. Sequi, maiores.
+                </div>
+                <img src="/resources/user-3.jpg" class="img-fluid rounded-circle" style="width: 100px;">
+                <p>Joseph Brandon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid div3 text-center text-light" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="container p-5">
+            <p class="my-2">GIFT CARD</p>
+            <h1 class="display-3 my-4">Give the Gift of Greenery</h1>
+            <p>Pretium tortor risus enim neque quis pellentesque maecenas proin odio eget arcu</p>
+            <button class="btn btn-light my-3">Purchase A Gift Card</button>
+        </div>
+    </div>
+
+    <div class="container-fluid px-5 pt-5 pb-3 mt-3 mb-1">
+        <div class="row">
+            <div class="col text-center">
+                <i class="fa-solid fa-lock fa-2x text-bg-success p-2 text-light text-center rounded-circle"></i>
+                <div class="text-dark">
+                    <h5>SECURE PAYMENT</h5>
+                    <p>Curabitur interdum, nisl at tincidunt.</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <i class="fa-solid fa-hand-holding-hand fa-2x text-bg-success p-2 text-light text-center rounded-circle"></i>
+                <div class="text-dark">
+                    <h5>EXCELLENT SERVICE</h5>
+                    <p>Curabitur interdum, nisl at tincidunt.</p>
+                </div>
+            </div>
+            <div class="col text-center">
+                <i class="fa-solid fa-box fa-2x text-bg-success p-2 text-light text-center rounded-circle"></i>
+                <div class="text-dark">
+                    <h5>DELIVERED WITH CARE</h5>
+                    <p>Curabitur interdum, nisl at tincidunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container-fluid bg-black text-center">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid mt-2">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="px-3 nav-item active"><a href="#" class="nav-link">HOME</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">PLANTS</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+                            <li class="px-1 nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h3 class="text-light my-3">Subscribe To Our Newsletter</h3>
+            <div class="container mx-auto input-group" style="width: 300px;">
+                <input type="email" class="form-control rounded-0 bg-dark text-white" placeholder="Enter email address">
+                <button class="btn btn-dark rounded-0 btn-outline-success border border-light" type="submit">SUBSCRIBE</button>
+            </div>
+            <div class="container p-3 ftl">
+                <a class="p-1" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="p-1" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="p-1" href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <hr class="text-white">
+        <p class="text-white py-2"><i class="fa-regular fa-copyright"></i> Owned by Greenstore | 2022</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
